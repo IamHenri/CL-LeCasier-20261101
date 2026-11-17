@@ -1,0 +1,75 @@
+---
+layout: default
+permalink: /
+body_class: home
+title: "LE CASIER  - Restaurant à Auray, spécialité des produits de la mers - Morbihan"
+description: "Le Casier est un restaurant situé à Auray, dans le Morbihan, à la cuisine marine qui vous plonge entre racines et grands horizons. Ouvert du mercredi au dimanche."
+og_image: "https://framerusercontent.com/assets/liwlLfz2SXy2jTrw4X0rga2vY.jpg"
+---
+<section class="hero" style="background-image:url('https://framerusercontent.com/images/BAwgvI5ftzkMfEPPDRg8dMV41c.jpg?width=1920&height=1920')">
+  <div class="hero__inner">
+    <img class="hero__side" src="https://framerusercontent.com/images/PZ6kyDCenIyaaMzpToYlEocAUc.webp?width=1600&height=1066" alt="">
+    <h1>Le CAsier</h1>
+    <p class="hero__lead">Restaurant à Auray, dans le Morbihan,<br>à la cuisine marine qui vous plonge entre racines et grands horizons.</p>
+    <p>Au coeur de notre identité, le poisson s'impose comme une évidence.</p>
+    <p>Fil conducteur de notre cuisine, il est travaillé avec précision et respect,</p>
+    <p>au rythme des saisons et d'inspirations venues d'ailleurs.</p>
+    <p>tout en restant profondément ancré dans l'héritage culinaire français.</p>
+    <p class="hero__actions">
+      <a class="btn" href="{{ site.data.site.booking_url }}">Réservez votre table</a>
+      <a class="btn btn--ghost" href="{{ '/contact' | relative_url }}">Nous contacter</a>
+    </p>
+  </div>
+</section>
+
+<section class="esprit">
+  <div class="esprit__text">
+    <h2>L’esprit de la maison</h2>
+    <p>Retrouvez-nous du mercredi au samedi, midi et soir,<br>ainsi que le dimanche midi.</p>
+    <p>Pour vos déjeuners (hors dimanche), découvrez notre Menu Instant Midi:<br>entrée, plat et dessert à 29 euros par personne.</p>
+    <p>Le soir ainsi que le dimanche midi, nous vous accueillons avec notre carte, accompagnée de nos menus Marée &amp; Ecume,<br>imaginés au fil des saisons et des arrivages.</p>
+  </div>
+  <figure class="esprit__fig">
+    <img src="https://framerusercontent.com/images/C8CX1sf4KAUzLUksaEpWl1l0yI8.webp?lossless=1&width=1600&height=1067" alt="Une cuisine française contemporaine, ouverte sur le monde" loading="lazy">
+    <figcaption>
+      <h2>Une cuisine française contemporaine, ouverte sur le monde</h2>
+      <a class="btn" href="{{ '/menu' | relative_url }}">Découvrir le menu</a>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="gallery">
+  <h3>Quelques images de notre restaurant</h3>
+  <div class="gallery__track">
+    {% for g in site.data.gallery %}
+    <figure><img src="{{ g.src }}" alt="{{ g.caption }}" loading="lazy"><figcaption>{{ g.caption }}</figcaption></figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="local">
+  <h2>Engagés dans l'économie locale Bretonne</h2>
+  <div class="local__date">
+    <span class="local__month">Janvier</span>
+    <span class="local__day">14</span>
+  </div>
+  <div class="local__text">
+    <h3>Nous avons ouvert au mois de janvier 2026</h3>
+    <p>Notre restaurant à ouvert ses portes le 14 janvier afin de vous offrir une experience culinaire orienté sur les produits issues de l'économie locale prioritairement.</p>
+  </div>
+  <h3 class="local__title">Nos fournisseurs</h3>
+  <p>Un lien fort de sens pour nous, voici nous fournisseurs qui nous fournissent les produits locaux</p>
+  <div class="marquee" aria-label="Nos fournisseurs">
+    <ul class="marquee__track">
+      {% for i in (1..2) %}{% for s in site.data.suppliers %}
+      <li><img src="{{ s }}" alt="" loading="lazy"></li>
+      {% endfor %}{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="review">
+  <p class="review__stars" aria-label="5 étoiles sur 5">⭐⭐⭐⭐⭐</p>
+  <blockquote>"Un travail remarquable ! Nous avons passé une soirée exceptionnelle à deux. Le menu Écume était parfaitement réalisé parfaitement accordé avec des vins que nous avons pris au verre. Les desserts étaient envoutant. On recommende les yeux fermés."</blockquote>
+  <p class="review__author"><img src="https://framerusercontent.com/images/GWrqenSUjwtm1XEoVsAG8J4w.jpg?width=4000&height=6000" alt="" loading="lazy"> Michel Le Pennec</p>
+</section>

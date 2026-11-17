@@ -1,0 +1,7 @@
+# ATTENTION : l'association onglet -> image est supposée d'après l'ordre de la page d'origine. À vérifier visuellement.
+- { label: "Nos Plats",         src: "https://framerusercontent.com/images/LERsasRZGFktSJvf4SdzvhxnABc.png?width=1410&height=2000" }
+- { label: "Nos Desserts",      src: "https://framerusercontent.com/images/bHMYnxGJ80x2EXtw14GjdaWfJs0.png?width=1410&height=2000" }
+- { label: "Nos Entrées",       src: "https://framerusercontent.com/images/dWUYGYCaWLTB7XK1QkOzOdwA.png?width=1426&height=2000" }
+- { label: "Menu Instant Midi", src: "https://framerusercontent.com/images/gAGzwwPxFE9fNr0ipI7dgArfAI.png?width=1410&height=2000" }
+- { label: "Menu Écume",        src: "https://framerusercontent.com/images/bYxxhv1ajN0qbXo4fm73I8afN8.png?width=1410&height=2000" }
+- { label: "Menu Marée",        src: "https://framerusercontent.com/images/5CUCpqPp6Ny2RUiKr5hBfn1ib0.png?width=1410&height=2000" }

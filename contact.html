@@ -1,0 +1,37 @@
+---
+layout: default
+permalink: /contact
+body_class: contact
+title: "Contacter le restaurant LE CASIER  -  à Auray, spécialité des produits de la mer"
+description: "Vous souhaitez nous contacter pour valider une réservation, ou pour poser une question ? Vous êtes sur la bonne page."
+og_image: "https://framerusercontent.com/assets/C1ta1COZ7PX8epWV0k3slLTsgY.png"
+---
+<section class="page-hero" style="background-image:url('https://framerusercontent.com/images/hjtPsm0IyHdpI1j3mC1fCRwjxs.webp?width=1024&height=1536')">
+  <h1>Contactez-nous</h1>
+</section>
+
+<section class="contact">
+  <div class="contact__info">
+    <p>Voici nos cordonnées de contact :</p>
+    <p>{{ site.data.site.address[0] }}<br>{{ site.data.site.address[1] }}</p>
+    <p><a href="tel:{{ site.data.site.phone_href }}">{{ site.data.site.phone }}</a></p>
+    <p>Nous sommes ouvert du</p>
+    <p>{{ site.data.site.hours_week_label }}<br>{{ site.data.site.hours_week }}</p>
+    <p>{{ site.data.site.hours_sunday_label }}</p>
+    <p>{{ site.data.site.hours_sunday }}</p>
+  </div>
+  <div class="contact__form">
+    <p>Posez-nous vos questions,<br>nous vous répondrons.</p>
+    <!-- GitHub Pages est statique : remplacer l'action par un service de formulaire (Formspree, Basin, Getform...) -->
+    <form action="https://formspree.io/f/XXXXXXXX" method="POST">
+      <label for="nom">Nom</label>
+      <input id="nom" name="nom" type="text" autocomplete="name" required>
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="message">Ècrivez votre message :</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+  </div>
+  <img class="contact__img" src="https://framerusercontent.com/images/sXYRFXpyzIgcQFICP2pV3tMBADo.webp?width=1920&height=3840" alt="" loading="lazy">
+</section>

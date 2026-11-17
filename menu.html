@@ -1,0 +1,26 @@
+---
+layout: default
+permalink: /menu
+body_class: menu
+title: "Nos menus - LE CASIER  - Restaurant à Auray, spécialité des produits de la mers - Morbihan"
+description: "Découvrez les menus du restaurant Le Casier. Nous vous proposons un menu midi et deux menus du soir."
+og_image: "https://framerusercontent.com/assets/C1ta1COZ7PX8epWV0k3slLTsgY.png"
+---
+<section class="page-hero" style="background-image:url('https://framerusercontent.com/images/1R0szBRiB45a18Fyd0lZukA48k.webp?lossless=1&width=1920&height=2959')">
+  <h1>Nos Menus</h1>
+</section>
+
+<section class="menu-viewer" data-menu>
+  <div class="menu-tabs" role="tablist">
+    {% for m in site.data.menus %}
+    <button type="button" role="tab" data-i="{{ forloop.index0 }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ m.label }}</button>
+    {% endfor %}
+  </div>
+  <div class="menu-stage">
+    <button type="button" class="menu-arrow menu-arrow--prev" data-dir="-1" aria-label="Précédent"><img src="https://framerusercontent.com/images/6tTbkXggWgQCAJ4DO2QEdXXmgM.svg" alt=""></button>
+    {% for m in site.data.menus %}
+    <img class="menu-sheet{% if forloop.first %} is-active{% endif %}" src="{{ m.src }}" alt="{{ m.label }}"{% unless forloop.first %} loading="lazy"{% endunless %}>
+    {% endfor %}
+    <button type="button" class="menu-arrow menu-arrow--next" data-dir="1" aria-label="Suivant"><img src="https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg" alt=""></button>
+  </div>
+</section>

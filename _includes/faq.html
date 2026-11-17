@@ -1,0 +1,12 @@
+<section class="faq">
+  <h2>FAQ</h2>
+  <div class="faq__list">
+    {% for item in site.data.faq %}
+    <details>
+      <summary>{{ item.q }}</summary>
+      {% if item.a != "" %}<p>{{ item.a }}</p>{% endif %}
+    </details>
+    {% endfor %}
+  </div>
+  <a class="btn" href="{{ '/contact' | relative_url }}">Nous contacter</a>
+</section>

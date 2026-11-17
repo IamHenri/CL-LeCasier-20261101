@@ -1,0 +1,17 @@
+booking_url: "https://app.overfull.fr/booking-v2/?key_id=em2SszX2M6u&source=Web"
+gift_url: "https://le-casier.shop.bonkdo.com/fr"
+phone: "02 97 52 88 29"
+phone_href: "+33297528829"
+email: "contact@le-casier.fr"
+address: ["16 Rue du Jeu de Paume,", "56400 Auray"]
+hours_week_label: "Mercredi au Samedi"
+hours_week: "12:00 - 13:30 . 19:00-20:30"
+hours_sunday_label: "Dimanche"
+hours_sunday: "12:00 - 14:00"
+logo: "https://framerusercontent.com/images/9vVE7mtTgQB9halYmEasX4mzJbg.png?width=712&height=438"
+cta_image: "https://framerusercontent.com/images/hjtPsm0IyHdpI1j3mC1fCRwjxs.webp?width=1024&height=1536"
+nav:
+  - { label: "Accueil", url: "/" }
+  - { label: "Nos Menus", url: "/menu" }
+  - { label: "Bons cadeaux", url: "https://le-casier.shop.bonkdo.com/fr" }
+  - { label: "Contact", url: "/contact" }

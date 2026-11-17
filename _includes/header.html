@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Le Casier – Accueil"><img src="{{ site.data.site.logo }}" alt="Le Casier"></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav">
+    {% for item in site.data.site.nav %}
+      {% assign u = item.url %}
+      {% unless u contains '://' %}{% assign u = u | relative_url %}{% endunless %}
+      <a href="{{ u }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+    {% endfor %}
+    <a class="btn btn--small" href="{{ site.data.site.booking_url }}">Réservez-votre table</a>
+  </nav>
+</header>

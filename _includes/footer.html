@@ -1,0 +1,28 @@
+{% include faq.html %}
+{% assign s = site.data.site %}
+<section class="cta">
+  <img class="cta__img" src="{{ s.cta_image }}" alt="Intérieur du restaurant Le Casier" loading="lazy">
+  <div class="cta__body">
+    <h2>Venez découvrir notre cuisine</h2>
+    <p>Seul, en couple ou à plusieurs, nous serons ravis de vous accueillir.</p>
+    <a class="btn" href="{{ s.booking_url }}">Réservez votre table</a>
+  </div>
+</section>
+<footer class="site-footer">
+  <img class="site-footer__logo" src="{{ s.logo }}" alt="Le Casier">
+  <div>
+    <h3>Le CAsier</h3>
+    <p>Notre adresse :<br>{{ s.address[0] }} {{ s.address[1] }}</p>
+    <p><a href="tel:{{ s.phone_href }}">{{ s.phone }}</a></p>
+    <p>Ouvert du {{ s.hours_week_label }}<br>{{ s.hours_week }}</p>
+    <p>Le {{ s.hours_sunday_label }}</p>
+    <p>{{ s.hours_sunday }}</p>
+  </div>
+  <div>
+    <p>Un lieu incontournable pour déguster des produits locaux</p>
+    <p>oú la mer prend une place évidente..</p>
+    <p><a href="{{ '/politique-de-confidentialite' | relative_url }}">Politique de confidentialité</a></p>
+    <p>LE CASIER © 2026 . Tous droits réservés</p>
+    {% if site.show_studio_credit %}<p>Fait par <a href="https://guxe.studio">Guxe Studio</a></p>{% endif %}
+  </div>
+</footer>

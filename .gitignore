@@ -1,0 +1,42 @@
+
+# ==============================
+# Jekyll - fichiers générés
+# ==============================
+
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata/
+
+# ==============================
+# Ruby / Bundler
+# ==============================
+
+.bundle/
+vendor/bundle/
+vendor/cache/
+
+# ==============================
+# Système d'exploitation
+# ==============================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Éditeurs de code
+# ==============================
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==============================
+# Logs et fichiers temporaires
+# ==============================
+
+*.log
+*.tmp

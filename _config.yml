@@ -1,0 +1,7 @@
+title: "Le Casier"
+lang: fr
+url: "https://iamhenri.github.io/CL-LeCasier-20261101/"   # adapter si hébergé ailleurs (ex. https://IamHenri.github.io)
+baseurl: ""                   # laisser vide (domaine perso ou user page). Si projet GitHub Pages : "/nom-du-repo"
+markdown: kramdown
+exclude: [Gemfile, Gemfile.lock, README.md, tools, vendor]
+show_studio_credit: true      # "Fait par Guxe Studio" dans le footer : à passer à false / modifier
